@@ -15,6 +15,12 @@ body {
     color: #ccc; /* Light text color for contrast */
 }
 
+#note {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .login-container {
     width: 100%;
     padding: 30px;
@@ -52,7 +58,7 @@ body {
 .login-container button {
     width: 100%;
     padding: 10px;
-    background: #007bff; 
+    background: #007bff;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -69,4 +75,9 @@ body {
     font-size: 14px;
     margin-bottom: 10px;
     display: none;
+}
+.success-message {
+    display: none;
+    margin-bottom: 10px;
+    text-align: center;
 }

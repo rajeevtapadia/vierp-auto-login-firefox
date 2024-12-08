@@ -8,9 +8,10 @@
     </head>
     <body>
         <div class="login-container">
-            <h2>Login</h2>
+            <h2>Enter Login Credentials</h2>
+            <div id="note">Note: vierp and volp passwords must be same</div>
             <div class="error-message" id="error-message">
-                Please enter both email and password.
+                Something went wrong
             </div>
             <form id="login-form">
                 <div class="form-group">
@@ -35,6 +36,9 @@
                     />
                 </div>
 
+                <div class="success-message" id="success-message">
+                    Saved successfully
+                </div>
                 <button type="submit">Save</button>
             </form>
         </div>

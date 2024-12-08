@@ -1,6 +1,6 @@
 const form = document.getElementById("login-form");
 const errorMsg = document.getElementById("error-message");
-console.log("vimvimv");
+const success_msg = document.getElementById("success-message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -10,16 +10,15 @@ form.addEventListener("submit", (e) => {
   if (!email || !password) {
     errorMsg.style.display = "block";
   } else {
-    console.log("in", { email, password });
-    console.log(browser)
+    console.log({ email, password });
     errorMsg.style.display = "none";
     browser.storage.local.set({ email, password }).then(
       () => {
-        alert(`saved: ${email}, ${password}`);
-        console.log("saved successfully")
+        console.log("saved successfully");
+        success_msg.style.display = "block";
       },
       () => {
-        alert("something went wrong");
+        errorMsg.style.display = "block";
       },
     );
   }

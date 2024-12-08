@@ -12,7 +12,11 @@
 
   "content_scripts": [
     {
-      "matches": ["https://learner.vierp.in/", "https://classroom.volp.in/login"],
+      "matches": [
+        "https://learner.vierp.in/",
+        "https://classroom.volp.in/",
+        "https://classroom.volp.in/login"
+      ],
       "js": ["index.js"]
     }
   ],
