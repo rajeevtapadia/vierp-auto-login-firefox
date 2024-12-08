@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "vierp-auto-login",
+  "version": "1.0",
+  "description": "Auto logins to sites like learner.vierp.in and classroom.volp.in for VITP students.",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
+  "permissions": ["activeTab", "storage"],
+
+  "icons": {
+    "48": "icons/kat.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://learner.vierp.in/", "https://classroom.volp.in/login"],
+      "js": ["index.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/kat.jpg"
+    },
+    "default_title": "Auto-login",
+    "default_popup": "popup.html"
+  }
+}
