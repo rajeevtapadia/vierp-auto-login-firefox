@@ -7,7 +7,7 @@
   "permissions": ["activeTab", "storage"],
 
   "icons": {
-    "48": "icons/kat.jpg"
+    "48": "icons/kat.png"
   },
 
   "content_scripts": [
@@ -23,7 +23,7 @@
 
   "browser_action": {
     "default_icon": {
-      "48": "icons/kat.jpg"
+      "48": "icons/kat.png"
     },
     "default_title": "Auto-login",
     "default_popup": "popup.html"
